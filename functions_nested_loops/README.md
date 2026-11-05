@@ -65,3 +65,9 @@ A function that prints all integers from a given number to 98.
 It counts upward when the starting number is less than 98,
 and downward when it is greater than 98.
 Numbers are separated by a comma and a space.
+
+## Task 12: 100 Times Table
+
+A function that prints the multiplication table of n, starting from 0.
+The function accepts values from 0 to 15 only.
+It uses nested loops and formats the output with commas and spaces.
