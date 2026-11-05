@@ -44,3 +44,8 @@ Negative numbers become positive, while positive numbers and zero remain unchang
 
 A function that prints the last digit of an integer and returns its value.
 The last digit is always printed as a nonnegative digit.
+
+## Task 8: 24 Hours
+
+A function that prints every minute of the day, from 00:00 to 23:59.
+Uses nested loops to iterate through 24 hours and 60 minutes.
