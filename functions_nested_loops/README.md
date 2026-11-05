@@ -24,3 +24,8 @@ A function that prints the lowercase alphabet 10 times, each on a new line.
 
 A function that checks whether a character is lowercase.
 Returns 1 if lowercase and 0 otherwise.
+
+## Task 4: isalpha
+
+A function that checks whether a character is an alphabetic letter.
+Returns 1 for uppercase and lowercase letters, and 0 otherwise.
