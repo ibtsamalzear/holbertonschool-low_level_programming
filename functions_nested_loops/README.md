@@ -58,3 +58,10 @@ Uses nested loops to calculate and display multiplication results.
 ## Task 10: Add
 
 A function that adds two integers and returns their sum.
+
+## Task 11: Print to 98
+
+A function that prints all integers from a given number to 98.
+It counts upward when the starting number is less than 98,
+and downward when it is greater than 98.
+Numbers are separated by a comma and a space.
