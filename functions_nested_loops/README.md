@@ -34,3 +34,8 @@ Returns 1 for uppercase and lowercase letters, and 0 otherwise.
 
 A function that prints the sign of a number.
 Returns 1 for positive numbers, 0 for zero, and -1 for negative numbers.
+
+## Task 6: Absolute Value
+
+A function that computes the absolute value of an integer.
+Negative numbers become positive, while positive numbers and zero remain unchanged.
