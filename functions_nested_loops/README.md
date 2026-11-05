@@ -39,3 +39,8 @@ Returns 1 for positive numbers, 0 for zero, and -1 for negative numbers.
 
 A function that computes the absolute value of an integer.
 Negative numbers become positive, while positive numbers and zero remain unchanged.
+
+## Task 7: Print Last Digit
+
+A function that prints the last digit of an integer and returns its value.
+The last digit is always printed as a nonnegative digit.
