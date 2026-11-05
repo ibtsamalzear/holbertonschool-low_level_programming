@@ -87,3 +87,12 @@ The numbers are separated by a comma and a space.
 
 A program that calculates the sum of even-valued Fibonacci numbers
 whose values do not exceed 4,000,000.
+
+
+## Task 16: Fibonacci
+
+A program that prints the first 98 Fibonacci numbers,
+starting with 1 and 2.
+
+The program handles large numbers without using long long,
+malloc, pointers, arrays, or structures.
