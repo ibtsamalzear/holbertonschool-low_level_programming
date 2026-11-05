@@ -71,3 +71,7 @@ Numbers are separated by a comma and a space.
 A function that prints the multiplication table of n, starting from 0.
 The function accepts values from 0 to 15 only.
 It uses nested loops and formats the output with commas and spaces.
+
+## Task 13: Natural Numbers
+
+A program that calculates and prints the sum of all multiples of 3 or 5 below 1024.
