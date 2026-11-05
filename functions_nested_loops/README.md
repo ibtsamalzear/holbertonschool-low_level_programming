@@ -19,3 +19,8 @@ A function that prints the lowercase English alphabet followed by a new line.
 ## Task 2: 10 x alphabet
 
 A function that prints the lowercase alphabet 10 times, each on a new line.
+
+## Task 3: islower
+
+A function that checks whether a character is lowercase.
+Returns 1 if lowercase and 0 otherwise.
