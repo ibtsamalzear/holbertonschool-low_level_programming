@@ -11,3 +11,7 @@ This project covers functions and nested loops in C.
 
 ## Tasks
 - 0. _putchar
+
+## Task 1: print_alphabet
+
+A function that prints the lowercase English alphabet followed by a new line.
