@@ -54,3 +54,7 @@ Uses nested loops to iterate through 24 hours and 60 minutes.
 
 A function that prints the 9 times table, starting from 0.
 Uses nested loops to calculate and display multiplication results.
+
+## Task 10: Add
+
+A function that adds two integers and returns their sum.
