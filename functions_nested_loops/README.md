@@ -75,3 +75,9 @@ It uses nested loops and formats the output with commas and spaces.
 ## Task 13: Natural Numbers
 
 A program that calculates and prints the sum of all multiples of 3 or 5 below 1024.
+
+## Task 14: Fibonacci
+
+A program that prints the first 50 Fibonacci numbers,
+starting with 1 and 2.
+The numbers are separated by a comma and a space.
