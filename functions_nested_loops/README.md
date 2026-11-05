@@ -29,3 +29,8 @@ Returns 1 if lowercase and 0 otherwise.
 
 A function that checks whether a character is an alphabetic letter.
 Returns 1 for uppercase and lowercase letters, and 0 otherwise.
+
+## Task 5: Sign
+
+A function that prints the sign of a number.
+Returns 1 for positive numbers, 0 for zero, and -1 for negative numbers.
