@@ -7,25 +7,25 @@
  */
 int main(void)
 {
-    unsigned long number = 612852475143UL;
-    unsigned long factor;
-    unsigned long largest;
+	unsigned long number = 612852475143UL;
+	unsigned long factor;
+	unsigned long largest;
 
-    largest = 0;
+	largest = 0;
 
-    for (factor = 2; factor <= number / factor; factor++)
-    {
-        while (number % factor == 0)
-        {
-            largest = factor;
-            number /= factor;
-        }
-    }
+	for (factor = 2; factor <= number / factor; factor++)
+	{
+		while (number % factor == 0)
+		{
+			largest = factor;
+			number /= factor;
+		}
+	}
 
-    if (number > 1)
-        largest = number;
+	if (number > 1)
+		largest = number;
 
-    printf("%lu\n", largest);
+	printf("%lu\n", largest);
 
-    return (0);
+	return (0);
 }
