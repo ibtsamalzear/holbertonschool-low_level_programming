@@ -9,22 +9,35 @@
  */
 int main(void)
 {
-	int p;
+	int i;
 	int sum;
-	int limit;
+	int remaining;
+	int lower;
+	int upper;
+	int p;
 
 	srand(time(NULL));
 	sum = 0;
 
-	while (sum < 2646)
+	for (i = 0; i < 21; i++)
 	{
-		limit = 2740 - sum;
-		p = (rand() % (limit - 32 + 1)) + 32;
-		sum += p;
+		p = 'y' + rand() % 2;
 		putchar(p);
+		sum += p;
 	}
 
-	putchar(2772 - sum);
+	remaining = 2772 - sum;
+	lower = remaining - 122;
+	upper = remaining - 97;
+
+	if (lower < 97)
+		lower = 97;
+	if (upper > 122)
+		upper = 122;
+
+	p = lower + rand() % (upper - lower + 1);
+	putchar(p);
+	putchar(remaining - p);
 	putchar('\n');
 
 	return (0);
