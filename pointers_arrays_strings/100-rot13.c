@@ -21,6 +21,7 @@ char *rot13(char *str)
 			if (str[i] == letters[j])
 			{
 				str[i] = encoded[j];
+				break;
 			}
 			j++;
 		}
