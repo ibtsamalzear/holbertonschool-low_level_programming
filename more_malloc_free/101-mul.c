@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * is_valid_number - checks if a string contains only digits
@@ -25,6 +24,23 @@ int is_valid_number(char *str)
 }
 
 /**
+ * string_length - calculates the length of a string
+ * @str: string to measure
+ *
+ * Return: string length
+ */
+unsigned int string_length(char *str)
+{
+    unsigned int len;
+
+    len = 0;
+    while (str[len] != '\0')
+        len++;
+
+    return (len);
+}
+
+/**
  * main - multiplies two positive numbers
  * @argc: number of arguments
  * @argv: arguments
@@ -35,8 +51,8 @@ int main(int argc, char *argv[])
 {
     char *num1, *num2;
     int *result;
-    size_t len1, len2, i, j;
-    int carry, sum, start;
+    unsigned int len1, len2, i, j, start;
+    int carry, sum;
 
     if (argc != 3)
     {
@@ -53,8 +69,8 @@ int main(int argc, char *argv[])
         return (98);
     }
 
-    len1 = strlen(num1);
-    len2 = strlen(num2);
+    len1 = string_length(num1);
+    len2 = string_length(num2);
 
     result = malloc(sizeof(int) * (len1 + len2));
     if (result == NULL)
@@ -80,7 +96,7 @@ int main(int argc, char *argv[])
     }
 
     start = 0;
-    while (start < (int)(len1 + len2 - 1) && result[start] == 0)
+    while (start < len1 + len2 - 1 && result[start] == 0)
         start++;
 
     for (i = start; i < len1 + len2; i++)
