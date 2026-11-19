@@ -2,6 +2,36 @@
 #include "dog.h"
 
 /**
+ * copy_string - creates a copy of a string
+ * @str: string to copy
+ *
+ * Return: pointer to the copy, or NULL if it fails
+ */
+static char *copy_string(char *str)
+{
+	char *copy;
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+
+	copy = malloc(i + 1);
+	if (copy == NULL)
+		return (NULL);
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		copy[i] = str[i];
+		i++;
+	}
+	copy[i] = '\0';
+
+	return (copy);
+}
+
+/**
  * new_dog - creates a new dog
  * @name: dog's name
  * @age: dog's age
@@ -12,9 +42,6 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new;
-	char *new_name;
-	char *new_owner;
-	int i;
 
 	if (name == NULL || owner == NULL)
 		return (NULL);
@@ -23,48 +50,22 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (new == NULL)
 		return (NULL);
 
-	i = 0;
-	while (name[i] != '\0')
-		i++;
-
-	new_name = malloc(i + 1);
-	if (new_name == NULL)
+	new->name = copy_string(name);
+	if (new->name == NULL)
 	{
 		free(new);
 		return (NULL);
 	}
 
-	i = 0;
-	while (name[i] != '\0')
+	new->owner = copy_string(owner);
+	if (new->owner == NULL)
 	{
-		new_name[i] = name[i];
-		i++;
-	}
-	new_name[i] = '\0';
-
-	i = 0;
-	while (owner[i] != '\0')
-		i++;
-
-	new_owner = malloc(i + 1);
-	if (new_owner == NULL)
-	{
-		free(new_name);
+		free(new->name);
 		free(new);
 		return (NULL);
 	}
 
-	i = 0;
-	while (owner[i] != '\0')
-	{
-		new_owner[i] = owner[i];
-		i++;
-	}
-	new_owner[i] = '\0';
-
-	new->name = new_name;
 	new->age = age;
-	new->owner = new_owner;
 
 	return (new);
 }
